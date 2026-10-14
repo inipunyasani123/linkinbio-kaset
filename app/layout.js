@@ -3,10 +3,10 @@ import "./globals.css";
 
 const plex = IBM_Plex_Mono({ subsets: ["latin"], variable: "--font-plex", weight: ["400", "500", "700"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"KASET KITA","description":"Kolektif musik & radio komunitas","url":"https://linkinbio-kaset.vercel.app"};
+const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"KASET KITA","description":"Kolektif musik & radio komunitas","url":"https://linkinbio-kaset.pintuweb.id"};
 
 export const metadata = {
-  metadataBase: new URL("https://linkinbio-kaset.vercel.app"),
+  metadataBase: new URL("https://linkinbio-kaset.pintuweb.id"),
   title: { default: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung", template: "%s — Kaset Kita FM" },
   description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya dihitung menurut WIB, jadwal mingguan, arsip mixtape dengan tracklist band lokal, kirim demo, dan jadi penyiar tamu.",
   applicationName: "KASET KITA",
@@ -14,11 +14,11 @@ export const metadata = {
   authors: [{ name: "KASET KITA" }],
   creator: "KASET KITA",
   publisher: "KASET KITA",
-  alternates: { canonical: "https://linkinbio-kaset.vercel.app" },
+  alternates: { canonical: "https://linkinbio-kaset.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://linkinbio-kaset.vercel.app",
+    url: "https://linkinbio-kaset.pintuweb.id",
     siteName: "KASET KITA",
     title: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung",
     description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya dihitung menurut WIB, jadwal mingguan, arsip mixtape dengan tracklist band lokal, kirim demo, dan jadi penyiar tamu.",

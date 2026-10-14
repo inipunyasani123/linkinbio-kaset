@@ -2,7 +2,7 @@
 
 Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya dihitung menurut WIB, jadwal mingguan, arsip mixtape dengan tracklist band lokal, kirim demo, dan jadi penyiar tamu.
 
-**Demo live:** https://linkinbio-kaset.vercel.app
+**Demo live:** https://linkinbio-kaset.pintuweb.id
 
 ![Tangkapan layar KASET KITA](public/og.jpg)
 
