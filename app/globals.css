@@ -21,13 +21,41 @@ body {
 /* Bodi kaset */
 .tape { background: linear-gradient(180deg, #5a4030, #47331f); box-shadow: 0 16px 44px -16px rgba(74, 52, 38, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15); }
 
-/* Reel */
+/* Reel — berputar hanya saat jadwal siaran sedang berjalan (kelas .berputar) */
 @keyframes reel { to { transform: rotate(360deg); } }
-.reel { animation: reel 3.4s linear infinite; background:
+.reel.berputar { animation: reel 3.4s linear infinite; }
+.reel { background:
   radial-gradient(circle, #efe6d0 0 26%, transparent 26.5%),
   conic-gradient(#2b1d12 0 20deg, transparent 20deg 60deg, #2b1d12 60deg 80deg, transparent 80deg 120deg, #2b1d12 120deg 140deg, transparent 140deg 180deg, #2b1d12 180deg 200deg, transparent 200deg 240deg, #2b1d12 240deg 260deg, transparent 260deg 300deg, #2b1d12 300deg 320deg, transparent 320deg); }
 
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 .rise { animation: rise 0.6s ease-out both; }
+/* Masuk memakai properti translate supaya rotasi/geser bawaan elemen tetap utuh. */
+@keyframes masuk { from { opacity: 0; translate: -12px 0; } to { opacity: 1; translate: 0 0; } }
+.masuk { animation: masuk 0.4s ease-out both; }
+@keyframes turun { from { opacity: 0; translate: 0 -18px; } to { opacity: 1; translate: 0 0; } }
+.turun { animation: turun 0.55s ease-out both; }
 
-:focus-visible { outline: 2px solid var(--color-oranye70); outline-offset: 3px; border-radius: 8px; }
+/* Sampul J-card di layar lebar: kertas bergaris tempat daftar lagu ditulis tangan. */
+@utility jcard {
+  border-radius: 0.75rem;
+  padding: 1.75rem 2rem;
+  rotate: 0.6deg;
+  background-color: #f6efdd;
+  background-image: repeating-linear-gradient(0deg, transparent 0 27px, rgba(74, 52, 38, 0.07) 27px 28px);
+  box-shadow: 0 18px 44px -22px rgba(74, 52, 38, 0.6), inset 0 0 0 1px rgba(74, 52, 38, 0.12);
+}
+
+/* Cincin fokus oranye tua: kontras ≥ 3:1 di atas krem. */
+:focus-visible { outline: 2px solid var(--color-oranye-ink); outline-offset: 3px; }
+
+/* Hormati pilihan "kurangi gerakan": konten langsung tampil, gulungan berhenti. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}

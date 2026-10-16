@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function FormTamu({ jenis = 'tamu' }) {
   const [selesai, setSelesai] = useState(false);
   const demo = jenis === 'demo';
-  const input = 'w-full border-b-2 border-cokelat/40 bg-transparent py-2 focus:border-oranye-ink focus:outline-none';
+  const input = 'w-full border-b-2 border-cokelat/60 bg-transparent py-2 focus:border-oranye-ink';
 
   return (
     <section id={demo ? 'kirim' : 'tamu'} aria-labelledby={`${jenis}-h`} className="mt-12 scroll-mt-6 rounded-2xl border-2 border-dashed border-cokelat/40 p-6">
@@ -17,7 +17,7 @@ export default function FormTamu({ jenis = 'tamu' }) {
         <div role="status" className="mt-4 text-sm">
           <p className="font-bold">⏺ Terekam. Kami membalas dalam seminggu.</p>
           <p className="mt-1 text-cokelat/80">Ini purwarupa desain: tidak ada data yang benar-benar dikirim.</p>
-          <button type="button" onClick={() => setSelesai(false)} className="mt-4 rounded-lg border-2 border-cokelat px-3 py-1.5 text-xs font-bold uppercase">⏏ Ulangi</button>
+          <button type="button" onClick={() => setSelesai(false)} className="mt-4 min-h-11 rounded-lg border-2 border-cokelat px-4 py-1.5 text-xs font-bold uppercase">⏏ Ulangi</button>
         </div>
       ) : (
         <form onSubmit={(e) => { e.preventDefault(); setSelesai(true); }} className="mt-5 grid gap-5 sm:grid-cols-2">
