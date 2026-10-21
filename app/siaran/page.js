@@ -1,5 +1,6 @@
 import { ACARA, NAMA_HARI, SITE } from '@/lib/kaset';
 import Kembali from '../components/Kembali';
+import Gambar from '../components/Gambar';
 import Berikutnya from '../components/Berikutnya';
 import FormTamu from '../components/FormTamu';
 
@@ -28,7 +29,10 @@ export default function Siaran() {
               </div>
               <div>
                 <h2 className="text-lg font-bold">{a.nama}</h2>
-                <p className="text-sm text-cokelat/80">bersama {a.penyiar}</p>
+                <p className="mt-1 flex items-center gap-2.5 text-sm text-cokelat/80">
+                  <Gambar src={`/images/penyiar/${a.foto}.webp`} alt={a.alt} width={44} height={44} asli={400} className="h-11 w-11 shrink-0 rounded-full ring-2 ring-krem70" />
+                  <span>bersama {a.penyiar}</span>
+                </p>
                 <p className="mt-1 text-sm">{a.ket}</p>
               </div>
             </li>
