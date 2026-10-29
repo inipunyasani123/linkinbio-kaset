@@ -20,7 +20,7 @@ export default function ArsipMixtape({ hari: awal }) {
               <span aria-hidden="true" className="text-xs font-bold text-oranye-ink transition-transform group-open:rotate-90">▸</span>
             </summary>
             <div className="flex gap-5 border-t border-dashed border-cokelat/25 px-4 py-4">
-            <Gambar src={`/images/mixtape/m${m.no}.webp`} alt={`Sampul J-card mixtape #${m.no} “${m.judul}”: ${m.sampul}`} width={128} height={128} asli={800} className="hidden h-32 w-32 shrink-0 -rotate-2 rounded-md shadow-[0_10px_24px_-12px_rgba(74,52,38,0.7)] sm:block" />
+            <Gambar src={`/images/mixtape/m${m.no}.webp`} alt={`Foto sampul mixtape #${m.no} “${m.judul}”: ${m.sampul}`} width={128} height={128} asli={800} className="hidden h-32 w-32 shrink-0 -rotate-2 rounded-md shadow-[0_10px_24px_-12px_rgba(74,52,38,0.7)] sm:block" />
             <ol className="flex-1">
               {m.lagu.map(([lagu, band], k) => (
                 <li key={lagu} className="flex gap-3 py-1.5 text-sm">
