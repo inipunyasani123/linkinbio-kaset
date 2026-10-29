@@ -8,9 +8,9 @@ const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":
 export const metadata = {
   metadataBase: new URL("https://linkinbio-kaset.pintuweb.id"),
   title: { default: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung", template: "%s — Kaset Kita FM" },
-  description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya menurut WIB, jadwal mingguan, arsip mixtape band lokal, kirim demo, dan penyiar tamu.",
+  description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya menurut WIB, jadwal mingguan, arsip mixtape band lokal, kirim lagu, dan penyiar tamu.",
   applicationName: "KASET KITA",
-  keywords: ["radio komunitas bandung", "mixtape lokal", "kirim demo band", "jadwal siaran", "link in bio radio"],
+  keywords: ["radio komunitas bandung", "mixtape lokal", "kirim lagu band", "jadwal siaran", "link in bio radio"],
   authors: [{ name: "KASET KITA" }],
   creator: "KASET KITA",
   publisher: "KASET KITA",
@@ -21,13 +21,13 @@ export const metadata = {
     url: "https://linkinbio-kaset.pintuweb.id",
     siteName: "KASET KITA",
     title: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung",
-    description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya menurut WIB, jadwal mingguan, arsip mixtape band lokal, kirim demo, dan penyiar tamu.",
+    description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya menurut WIB, jadwal mingguan, arsip mixtape band lokal, kirim lagu, dan penyiar tamu.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung",
-    description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya menurut WIB, jadwal mingguan, arsip mixtape band lokal, kirim demo, dan penyiar tamu.",
+    description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya menurut WIB, jadwal mingguan, arsip mixtape band lokal, kirim lagu, dan penyiar tamu.",
     images: ["/og.jpg"],
   },
   robots: {

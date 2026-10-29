@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-// Formulir bersama untuk penyiar tamu (siaran) dan kirim demo (mixtape).
+// Formulir bersama untuk penyiar tamu (siaran) dan kirim lagu (mixtape).
 export default function FormTamu({ jenis = 'tamu' }) {
   const [selesai, setSelesai] = useState(false);
   const demo = jenis === 'demo';
@@ -11,8 +11,8 @@ export default function FormTamu({ jenis = 'tamu' }) {
   return (
     <section id={demo ? 'kirim' : 'tamu'} aria-labelledby={`${jenis}-h`} className="mt-12 scroll-mt-6 rounded-2xl border-2 border-dashed border-cokelat/40 p-6">
       <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-mustard-ink">Side B · {demo ? '02' : '03'}</p>
-      <h2 id={`${jenis}-h`} className="mt-1 text-2xl font-bold tracking-tight">{demo ? 'KIRIM DEMO' : 'JADI PENYIAR TAMU'}</h2>
-      <p className="mt-1 text-sm text-cokelat/80">{demo ? 'Lima demo terpilih diputar di Demo Kiriman tiap Selasa.' : 'Bawa sepuluh lagu dan satu cerita. Satu jam di Minggu sore.'}</p>
+      <h2 id={`${jenis}-h`} className="mt-1 text-2xl font-bold tracking-tight">{demo ? 'KIRIM LAGU' : 'JADI PENYIAR TAMU'}</h2>
+      <p className="mt-1 text-sm text-cokelat/80">{demo ? 'Lima lagu terpilih diputar di Lagu Kiriman tiap Selasa.' : 'Bawa sepuluh lagu dan satu cerita. Satu jam di Minggu sore.'}</p>
       {selesai ? (
         <div role="status" className="mt-4 text-sm">
           <p className="font-bold">⏺ Terekam. Kami membalas dalam seminggu.</p>
@@ -31,7 +31,7 @@ export default function FormTamu({ jenis = 'tamu' }) {
           </div>
           {demo ? (
             <div className="sm:col-span-2">
-              <label htmlFor="demo-tautan" className="text-[11px] font-bold uppercase tracking-[0.2em] text-cokelat/80">Tautan demo (berkas audio atau halaman band)</label>
+              <label htmlFor="demo-tautan" className="text-[11px] font-bold uppercase tracking-[0.2em] text-cokelat/80">Tautan lagu (berkas audio atau halaman band)</label>
               <input id="demo-tautan" type="url" required placeholder="https://" className={input} />
             </div>
           ) : (
@@ -40,7 +40,7 @@ export default function FormTamu({ jenis = 'tamu' }) {
               <textarea id="tamu-tema" required rows={3} className={input} />
             </div>
           )}
-          <button type="submit" className="tape rounded-lg py-3 text-sm font-bold uppercase tracking-[0.2em] text-krem70 hover:text-white sm:col-span-2">⏺ {demo ? 'Kirim demo' : 'Daftar siaran'}</button>
+          <button type="submit" className="tape rounded-lg py-3 text-sm font-bold uppercase tracking-[0.2em] text-krem70 hover:text-white sm:col-span-2">⏺ {demo ? 'Kirim lagu' : 'Daftar siaran'}</button>
         </form>
       )}
     </section>

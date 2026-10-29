@@ -6,7 +6,7 @@ import ArsipMixtape from '../components/ArsipMixtape';
 
 export const metadata = {
   title: 'Arsip Mixtape',
-  description: 'Arsip mixtape Kaset Kita FM — #24 "Hujan Kota" sampai #21 "Kereta Pagi" — lengkap dengan tracklist band lokal, dan formulir kirim demo.',
+  description: 'Arsip mixtape Kaset Kita FM — #24 "Hujan Kota" sampai #21 "Kereta Pagi" — lengkap dengan tracklist band lokal, dan formulir kirim lagu.',
   alternates: { canonical: `${SITE}/mixtape` },
 };
 

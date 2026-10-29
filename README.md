@@ -1,6 +1,6 @@
 # Kaset Kita FM — Mixtape & Radio Komunitas, Bandung
 
-Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya menurut WIB, jadwal mingguan, arsip mixtape band lokal, kirim demo, dan penyiar tamu.
+Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya menurut WIB, jadwal mingguan, arsip mixtape band lokal, kirim lagu, dan penyiar tamu.
 
 **Demo live:** https://linkinbio-kaset.pintuweb.id
 
@@ -16,7 +16,7 @@ Persona Kaset Kita FM, radio kolektif. Mixtape kaset dengan dua gulungan yang be
 
 - `/` — kaset C-60 dengan dua gulungan berputar dan status siaran berikutnya, tautan Side A/B
 - `/siaran` — siaran berikutnya (WIB), jadwal tiga acara mingguan, formulir penyiar tamu
-- `/mixtape` — arsip empat mixtape bertracklist (details), formulir kirim demo
+- `/mixtape` — arsip empat mixtape bertracklist (details), formulir kirim lagu
 
 ## Teknologi
 

@@ -6,7 +6,7 @@ import FormTamu from '../components/FormTamu';
 
 export const metadata = {
   title: 'Jadwal Siaran',
-  description: 'Jadwal siaran mingguan Kaset Kita FM: Mixtape Jumat, Demo Kiriman, dan Arsip Kaset Lama, siaran berikutnya menurut WIB, dan cara jadi penyiar tamu.',
+  description: 'Jadwal siaran mingguan Kaset Kita FM: Mixtape Jumat, Lagu Kiriman, dan Arsip Kaset Lama, siaran berikutnya menurut WIB, dan cara jadi penyiar tamu.',
   alternates: { canonical: `${SITE}/siaran` },
 };
 
