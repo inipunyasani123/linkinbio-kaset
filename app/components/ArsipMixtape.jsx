@@ -15,7 +15,7 @@ export default function ArsipMixtape({ hari: awal }) {
               <Gambar src={`/images/mixtape/m${m.no}.webp`} alt="" width={56} height={56} asli={800} className="h-14 w-14 shrink-0 rounded-md shadow-[0_6px_14px_-8px_rgba(74,52,38,0.8)]" />
               <span className="flex-1">
                 <span className="block font-bold">&ldquo;{m.judul}&rdquo;</span>
-                <span className="block text-[11px] text-cokelat/75">{m.tanggal} · {m.durasi} · {m.lagu.length} lagu</span>
+                <span className="block text-xs text-cokelat/75">{m.tanggal} · {m.durasi} · {m.lagu.length} lagu</span>
               </span>
               <span aria-hidden="true" className="text-xs font-bold text-oranye-ink transition-transform group-open:rotate-90">▸</span>
             </summary>

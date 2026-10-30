@@ -23,7 +23,7 @@ export default function Dek() {
         <div className="h-1 rounded bg-mustard/30" aria-hidden="true">
           <div className="h-full rounded bg-oranye70 transition-[width] duration-700" style={{ width: `${p ? Math.max(4, Math.round(p.porsi * 100)) : 0}%` }} />
         </div>
-        <p role="status" className="mt-1.5 text-center text-[10px] uppercase tracking-[0.2em] text-krem70/85">{teks}</p>
+        <p role="status" className="mt-1.5 text-center text-xs uppercase tracking-[0.2em] text-krem70/85">{teks}</p>
       </div>
       <div className={`reel h-14 w-14 rounded-full border-4 border-mustard/70${putar}`} style={{ animationDuration: '2.6s' }} aria-hidden="true" />
     </div>

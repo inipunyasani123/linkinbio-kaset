@@ -21,7 +21,7 @@ export default function Mixtape() {
         <ArsipMixtape hari={hariIniWIB()} />
 
         <FormTamu jenis="demo" />
-        <p className="mt-8 text-center text-[11px] text-cokelat/75">Band dan lagu adalah contoh purwarupa desain.</p>
+        <p className="mt-8 text-center text-xs text-cokelat/75">Band dan lagu adalah contoh purwarupa desain.</p>
       </div>
     </main>
   );

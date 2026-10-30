@@ -10,7 +10,7 @@ export default function FormTamu({ jenis = 'tamu' }) {
 
   return (
     <section id={demo ? 'kirim' : 'tamu'} aria-labelledby={`${jenis}-h`} className="mt-12 scroll-mt-6 rounded-2xl border-2 border-dashed border-cokelat/40 p-6">
-      <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-mustard-ink">Side B · {demo ? '02' : '03'}</p>
+      <p className="text-xs font-bold uppercase tracking-[0.3em] text-mustard-ink">Side B · {demo ? '02' : '03'}</p>
       <h2 id={`${jenis}-h`} className="mt-1 text-2xl font-bold tracking-tight">{demo ? 'KIRIM LAGU' : 'JADI PENYIAR TAMU'}</h2>
       <p className="mt-1 text-sm text-cokelat/80">{demo ? 'Lima lagu terpilih diputar di Lagu Kiriman tiap Selasa.' : 'Bawa sepuluh lagu dan satu cerita. Satu jam di Minggu sore.'}</p>
       {selesai ? (
@@ -22,21 +22,21 @@ export default function FormTamu({ jenis = 'tamu' }) {
       ) : (
         <form onSubmit={(e) => { e.preventDefault(); setSelesai(true); }} className="mt-5 grid gap-5 sm:grid-cols-2">
           <div>
-            <label htmlFor={`${jenis}-nama`} className="text-[11px] font-bold uppercase tracking-[0.2em] text-cokelat/80">{demo ? 'Nama band / musisi' : 'Nama'}</label>
+            <label htmlFor={`${jenis}-nama`} className="text-xs font-bold uppercase tracking-[0.2em] text-cokelat/80">{demo ? 'Nama band / musisi' : 'Nama'}</label>
             <input id={`${jenis}-nama`} required className={input} />
           </div>
           <div>
-            <label htmlFor={`${jenis}-surel`} className="text-[11px] font-bold uppercase tracking-[0.2em] text-cokelat/80">Surel</label>
+            <label htmlFor={`${jenis}-surel`} className="text-xs font-bold uppercase tracking-[0.2em] text-cokelat/80">Surel</label>
             <input id={`${jenis}-surel`} type="email" required autoComplete="email" className={input} />
           </div>
           {demo ? (
             <div className="sm:col-span-2">
-              <label htmlFor="demo-tautan" className="text-[11px] font-bold uppercase tracking-[0.2em] text-cokelat/80">Tautan lagu (berkas audio atau halaman band)</label>
+              <label htmlFor="demo-tautan" className="text-xs font-bold uppercase tracking-[0.2em] text-cokelat/80">Tautan lagu (berkas audio atau halaman band)</label>
               <input id="demo-tautan" type="url" required placeholder="https://" className={input} />
             </div>
           ) : (
             <div className="sm:col-span-2">
-              <label htmlFor="tamu-tema" className="text-[11px] font-bold uppercase tracking-[0.2em] text-cokelat/80">Tema sepuluh lagumu</label>
+              <label htmlFor="tamu-tema" className="text-xs font-bold uppercase tracking-[0.2em] text-cokelat/80">Tema sepuluh lagumu</label>
               <textarea id="tamu-tema" required rows={3} className={input} />
             </div>
           )}

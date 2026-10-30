@@ -25,7 +25,7 @@ export default function Siaran() {
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.15em] text-oranye-ink">{NAMA_HARI[a.hari]}</p>
                 <p className="text-2xl font-bold">{String(a.jam).padStart(2, '0')}.00</p>
-                <p className="text-[11px] text-cokelat/75">{a.durasi} menit</p>
+                <p className="text-xs text-cokelat/75">{a.durasi} menit</p>
               </div>
               <div>
                 <h2 className="text-lg font-bold">{a.nama}</h2>
@@ -40,7 +40,7 @@ export default function Siaran() {
         </ol>
 
         <FormTamu />
-        <p className="mt-8 text-center text-[11px] text-cokelat/75">Acara dan penyiar adalah contoh purwarupa desain.</p>
+        <p className="mt-8 text-center text-xs text-cokelat/75">Acara dan penyiar adalah contoh purwarupa desain.</p>
       </div>
     </main>
   );
